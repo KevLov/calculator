@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-
-<html>
-<head>
-        <script src="index.js"></script>
-</head>
-<body>
-    <h1>Hola</h1>
-</body>
-
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    Enter the first value:
+    <br />
+    <input type="text" id="valor" value="" />
+    <br />
+    Enter the second value:
+    <br />
+    <input type="text" id="valor2" value="" />
+    <br />
+    <input type="button" value="+" onclick="suma()" />
+    <input type="button" value="-" onclick="suma()" />
+    <input type="button" value="*" onclick="suma()" />
+    <input type="button" value="/" onclick="suma()" />
+    <p id="resultado"></p>
+  </body>
 </html>
