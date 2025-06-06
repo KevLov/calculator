@@ -1,0 +1,21 @@
+.flex-container{
+display: flex;
+height: 300px;
+align-items: flex-end;
+justify-content: center;
+margin: 10px;  
+}
+.flex-container div {
+  width: 200px;
+}
+
+.buttons{
+    display: flex;
+    height: 300px;
+    align-items: flex-start;
+    justify-content: center;
+   
+}
+P{
+    margin: 10PX;
+}

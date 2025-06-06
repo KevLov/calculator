@@ -1,32 +1,35 @@
-function suma (num1, num2){
- var num1, num2;
+function suma (){
+ let num1, num2;
             num1 = document.getElementById("valor").value;
             num2 = document.getElementById("valor2").value;
-            var sumado;
-            return num1 + num2;
+            
+            let sumado = parseInt(num1) + parseInt(num2);
+            document.getElementById("resultado").innerHTML = "la suma de " + num1 + "+" + num2 + " = " + sumado;
 }
-function restar (num1, num2){
-    var num1, num2;
+
+function subs(){
+ let num1, num2;
             num1 = document.getElementById("valor").value;
             num2 = document.getElementById("valor2").value;
-            var resta;
-            return num1 - num2;
-}function multiplicar (num1, num2){
-   var num1, num2;
-            num1 = document.getElementById("valor").value;
-            num2 = document.getElementById("valor2").value;
-            var multiplica;
-            return num1 * num2;
+            
+            let subsc = parseInt(num1) - parseInt(num2);
+            document.getElementById("resultado").innerHTML = "La resta de " + num1 + "-" + num2 + " = " + subsc;
 }
-function dividir (num1, num2){
-   var num1, num2;
+function multi (){
+ let num1, num2;
             num1 = document.getElementById("valor").value;
             num2 = document.getElementById("valor2").value;
-            var divide;
-            return num1 / num2;
+            
+            let multipli = parseInt(num1) * parseInt(num2);
+            document.getElementById("resultado").innerHTML = "la multiplication de " + num1 + "*" + num2 + " = " + multipli;
+}
+function div (){
+ let num1, num2;
+            num1 = document.getElementById("valor").value;
+            num2 = document.getElementById("valor2").value;
+            
+            let divi = parseInt(num1) / parseInt(num2);
+            document.getElementById("resultado").innerHTML = "la division de " + num1 + "/" + num2 + " = " + divi;
 }
 
 
- sumado = suma();
-        document.getElementById("resultado").innerHTML = "la suma de " + num1 + " y " + num2 + " es " +
-            sumado;
