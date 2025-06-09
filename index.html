@@ -1,27 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
     <script src="Calculadora.js"></script>
     <title>Calculadora</title>
-</head>
-<body>
-    <div class="calcu">
-    Primer valor:
-    <input type="text" id="num1" >
-    Segundo valor:
-    <input type="text" id="num2" >
+  </head>
+  <body>
+    <div class="calc">
+      <div class="values">
+        <input placeholder="First Value" type="text" id="num1" />
+        <input placeholder="Second Value" type="text" id="num2" />
+        <p class="text-center" id="result">=</p>
+      </div>
+      <div class="botones">
+        <!--  
+        <div class="row">
+          <div class="col">
+            <button onclick="Sum()" class="btn btn-primary">+</button>
+          </div>
+          <div class="col">
+            <button onclick="Substraction()" class="btn btn-primary">-</button>
+          </div>
+          <div class="col">
+            <button onclick="Multiplication()" class="btn btn-primary">
+              *
+            </button>
+          </div>
+          <div class="col">
+            <button onclick="Division()" class="btn btn-primary">/</button>
+          </div>
+        </div>-->
+        <div class="row row-cols-4">
+          <button onclick="" class="btn btn-primary">1</button>
+          <button onclick="" class="btn btn-primary">2</button>
+          <button onclick="" class="btn btn-primary">3</button>
+          <button onclick="Sum()" class="btn btn-primary">+</button>
+        </div>
+        <div class="row row-cols-4">
+          <button onclick="" class="btn btn-primary">4</button>
+          <button onclick="" class="btn btn-primary">5</button>
+          <button onclick="" class="btn btn-primary">6</button>
+          <button onclick="Substraction()" class="btn btn-primary">-</button>
+        </div>
+        <div class="row row-cols-4">
+          <button onclick="" class="btn btn-primary">7</button>
+          <button onclick="" class="btn btn-primary">8</button>
+          <button onclick="" class="btn btn-primary">9</button>
+           <button onclick="Multiplication()" class="btn btn-primary">*</button>
+        </div>
+
+        <div class="row row-cols-3">
+          <button onclick="" class="btn btn-primary">0</button>
+          <button onclick="" class="btn btn-primary">.</button>
+          <button onclick="Division()" class="btn btn-primary">/</button>
+        </div>
+
+      </div>
     </div>
-    <div class="botones">
-    <button onclick="Sum()" class="btn btn-primary">+</button>
-    <button onclick="Substraction()" class="btn btn-primary">-</button>
-    <button onclick="Multiplication()" class="btn btn-primary">*</button>
-    <button onclick="Division()" class="btn btn-primary">/</button>
-     
-    <p id="result"> Total</p>
-    </div>    
-</body>
+  </body>
 </html>
